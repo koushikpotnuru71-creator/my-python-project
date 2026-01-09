@@ -1,0 +1,17 @@
+name: Basic Security Check
+
+on: [push]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for inline scripts
+        run: |
+          if grep -R "<script>" *.html; then
+            echo "Inline scripts found – security risk"
+            exit 1
+          fi
