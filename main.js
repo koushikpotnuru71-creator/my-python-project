@@ -16,7 +16,7 @@ if (process.argv[2]) {
 }
 	}
 function goodbye() {
-	console.log(styleText('yellow', "Goodbye, World!"));
+	console.log(styleText('yellow', "Goodbye cruel World!"));
 }
 
 main();
