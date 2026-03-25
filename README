@@ -1,1 +1,4 @@
 Hello World!
+git checkout -b release-<new version> origin/master
+git commit -a -v
+git push origin release-<new version>
