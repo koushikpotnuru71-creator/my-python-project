@@ -21,3 +21,16 @@ import math
         if a < 0:
             raise ValueError("Cannot calculate square root of negative number")
         return math.sqrt(a)
+
+    def power(self, a, b):
+        """
+        Возведение числа a в степень b
+        
+        Args:
+            a (int/float): Основание
+            b (int/float): Показатель степени
+            
+        Returns:
+            int/float: Результат возведения в степень
+        """
+        return a ** b

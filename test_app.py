@@ -9,3 +9,8 @@
         self.assertEqual(self.calc.sqrt(2), math.sqrt(2))
         with self.assertRaises(ValueError):
             self.calc.sqrt(-1)
+
+    def test_power_edge_cases(self):
+        self.assertEqual(self.calc.power(2, -1), 0.5)
+        self.assertEqual(self.calc.power(0, 5), 0)
+        self.assertEqual(self.calc.power(0, 0), 1)  # Математическое соглашение
